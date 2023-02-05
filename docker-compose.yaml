@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    container_name: webapp
+    volumes:
+      - webfiles:/var/www/html/
+
+volumes:
+  webfiles:
+

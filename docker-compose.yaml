@@ -1,7 +1,10 @@
 version: '3'
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: projectvprofile/webapp:V1
     ports:
       - "90:80"
     container_name: webapp

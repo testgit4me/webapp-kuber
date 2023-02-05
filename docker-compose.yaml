@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "80:80"
+      - "90:80"
     container_name: webapp
     volumes:
       - webfiles:/var/www/html/
